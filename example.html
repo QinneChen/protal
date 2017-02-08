@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<!--[if IE 7]> <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+    <title>天天停车</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <!-- CSS Global Compulsory-->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/headers/header1.css" />
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap-responsive.min.css" />
+    <link rel="stylesheet" href="assets/css/style_responsive.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css" />
+    <!-- CSS Theme -->
+    <!--    <link rel="stylesheet" href="assets/css/themes/default.css" id="style_color" />-->
+    <!--    <link rel="stylesheet" href="assets/css/themes/headers/default.css" id="style_color-header-1" />    -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <style>
+        .stateTip,
+        #StateTip {
+            display: none;
+            position: absolute;
+            padding: 8px;
+            background: #fff;
+            border: 2px solid #2385B1;
+            -moz-border-radius: 4px;
+            -webkit-border-radius: 4px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-family: Tahoma;
+            color: #333;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!--=== Top ===-->
+    <div class="top">
+        <div class="container">
+            <ul class="icon-page unstyled pull-right">
+                <li><i class="icon-edit"></i>意见反馈</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--/top-->
+    <!--=== End Top ===-->
+
+    <!--=== Header ===-->
+    <div class="header">
+        <div class="container" style="padding-top:15px;">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html"><img id="logo-header" src="assets/img/logo1-default.png" alt="Logo" /></a>
+            </div>
+            <!-- /logo -->
+
+            <!-- Menu -->
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <!-- /nav-collapse -->
+                    <div class="nav-collapse collapse">
+                        <ul class="nav top-2">
+                            <li class="active">
+                                <a href="index.html">首页 </a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">解决方案 
+                                <b class="caret"></b>                            
+                            </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="page_clients.html">智能解决方案</a></li>
+                                </ul>
+                                <b class="caret-out"></b>
+                            </li>
+                            <li>
+                                <a href="example.html">成功案例</a>
+                            </li>
+                            <li>
+                                <a href="cooperation.html">服务合作</a>
+                            </li>
+                            <li>
+                                <a href="contract.html">关于我们</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /nav-collapse -->
+                </div>
+                <!-- /navbar-inner -->
+            </div>
+            <!-- /navbar -->
+        </div>
+        <!-- /container -->
+    </div>
+    <!--/header -->
+    <!--=== End Header ===-->
+
+    <!--=== Breadcrumbs ===-->
+    <div class="breadcrumbs">
+        <div class="container">
+            <h1 class="color-green pull-left">成功案例</h1>
+            <ul class="pull-right breadcrumb">
+                <li><a href="index.html">首页</a> <span class="divider">/</span></li>
+                <li class="active">成功案例</li>
+            </ul>
+        </div>
+        <!--/container-->
+    </div>
+    <!--/breadcrumbs-->
+    <!--=== End Breadcrumbs ===-->
+
+    <!--=== Content Part ===-->
+    <div class="container">
+        <div class="left-tabs">
+            <div class="tab-pane" id="left-nav-3">
+                <h4 class="tab-current">| 成功案例</h4>
+                <p>城市智能停车项目主要应用于自动实现路内停车计时收费管理，陆续在深圳、武汉等地进行试点。</p>
+                <div class="mapcontainer" style="margin-left:10%;margin-top:5%">
+                    <div class="map"> 
+                    </div>
+                </div>
+                <!--                     <div id="stateTip" style="position: absolute;left: 100%;text-align: left;display: inline;"></div>-->
+                <!--                     <div id="mapTipContent" style="width: 900px;margin: 0 auto;display: none">-->
+                <!--                         <div class="mapTipImg"><img src="assets/plugins/map/hover.png" alt=""/></div>-->
+                <!--                     </div>-->
+            </div>
+        </div>
+        <!--/tab-content-->
+    </div>
+    <!--/container-->
+    <!--=== End Content Part ===-->
+
+    <!--=== Copyright ===-->
+    <div class="copyright">
+        <div class="container">
+            <div class="row-fluid">
+                <p><span style="display:inline-block;margin-right:70px;">地址：北京市海淀区xxxxxx</span><span style="display:inline-block;margin-right:70px;"><i class="icon-print" style="font-size:17px;"></i>  传真：<span style="color:#31cedd">010-xxxxxx</span></span><span><i class="icon-phone" style="font-size:17px;"></i>  电话：<span style="color:#31cedd">010-xxxxxxx</span></span>
+                </p>
+                <p style="margin-top:27px;">Copyright © 2017 &nbsp; All Rights Reserved</p>
+            </div>
+            <!--/row-fluid-->
+        </div>
+        <!--/container-->
+    </div>
+    <!--/copyright-->
+    <!--=== End Copyright ===-->
+
+    <!-- JS Global Compulsory -->
+    <script type="text/javascript" src="assets/js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- JS Implementing Plugins -->
+    <script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
+    <!-- JS Page Level -->
+    <script type="text/javascript" src="assets/js/app.js"></script>
+
+    <!-- map -->
+    <script type="text/javascript" src="assets/plugins/map/raphael-min.js"></script>
+    <script src="assets/plugins/map/jquery.mapael.js" charset="utf-8"></script>
+    <script src="assets/plugins/map/china_config.js" charset="utf-8"></script>
+
+    <script type="text/javascript">
+        jQuery(document).ready(function() {
+            $(".mapcontainer").mapael({
+                map: {
+                    name: "china_config"
+                        // Enable zoom on the map
+                        ,
+                    zoom: {
+                        enabled: false
+                    }
+                    // Set default plots and areas style
+                    ,
+                    defaultPlot: {
+                        attrs: {
+                            fill: "#FB3A3C",
+                            opacity: 1
+                        },
+                        attrsHover: {
+                            opacity: 1
+                        },
+                        text: {
+                            attrs: {
+                                fill: "#000"
+                            },
+                            attrsHover: {
+                                fill: "#000"
+                            }
+                        }
+                    },
+                    defaultArea: {
+                        attrs: {
+                            fill: "#f4f4e8",
+                            stroke: "#fff"
+                        },
+                        attrsHover: {
+                            fill: "#31cedd"
+                        },
+                        text: {
+                            attrs: {
+                                fill: "#000"
+                            },
+                            attrsHover: {
+                                fill: "#000"
+                            }
+                        }
+                    }
+                },
+                // Customize some areas of the map
+                areas: {
+                    "heilongjiang": {
+                        attrs: {
+                            fill: "#CCE7D4"
+                        },
+                        text: {
+                            content: "黑龙江",
+                            attrs: {
+                                "font-size": 10,
+                                'cursor': 'pointer'
+                            }
+                        }, 
+                        href: "http://www.baidu.com"
+                    },
+                    "jilin": {
+                        attrs: {
+                            fill: "#CCE7D4"
+                        },
+                        text: {
+                            content: "吉林",
+                            attrs: {
+                                "font-size": 10,
+                                'cursor': 'pointer'
+                            }
+                        }
+                        //                        ,attrsHover: {
+                        //                            fill: "#a4e100"
+                        //                        },
+                        //                        href: "http://fr.wikipedia.org/wiki/C%C3%B4te-d%27Or",
+                        ,
+                        target: "_blank"
+                    },
+                    "liaoning": {
+                        attrs: {
+                            fill: "#CCE7D4"
+                        },
+                        text: {
+                            content: "辽宁",
+                            attrs: {
+                                "font-size": 10,
+                                'cursor': 'pointer'
+                            }
+                        }
+                        //                        ,attrsHover: {
+                        //                            fill: "#a4e100"
+                        //                        },
+                        //                        href: "http://fr.wikipedia.org/wiki/C%C3%B4te-d%27Or",
+                        ,
+                        target: "_blank"
+                    },
+                    "hebei": {
+                        attrs: {
+                            fill: "#F9D2E4"
+                        },
+                        text: {
+                            content: "河北",
+                            attrs: {
+                                "font-size": 10,
+                                'cursor': 'pointer'
+                            }
+                        }, 
+                        href: "http://www.baidu.com"
+                    },
+                    "shandong": {
+                        attrs: {
+                            fill: "#FCD68D"
+                        },
+                        text: {
+                            content: "山东",
+                            attrs: {
+                                "font-size": 10,
+                                'cursor': 'pointer'
+                            }
+                        }, 
+                        href: "http://www.baidu.com"
+                    },
+                    "jiangsu": {
+                        attrs: {
+                            fill: "#FCD68D"
+                        },
+                        text: {
+                            content: "江苏",
+                            attrs: {
+                                "font-size": 10,
+                                'cursor': 'pointer'
+                            }
+                        }, 
+                        href: "http://www.baidu.com"
+                    },
+                    "zhejiang": {
+                        attrs: {
+                            fill: "#FCD68D"
+                        },
+                        text: {
+                            content: "浙江",
+                            attrs: {
+                                "font-size": 10,
+                                'cursor': 'pointer'
+                            }
+                        }, 
+                        href: "http://www.baidu.com"
+                    },
+                    "anhui": {
+                        attrs: {
+                            fill: "#FCD68D"
+                        },
+                        text: {
+                            content: "安徽",
+                            attrs: {
+                                "font-size": 10,
+                                'cursor': 'pointer'
+                            }
+                        }, 
+                        href: "http://www.baidu.com"
+                    },
+                    "henan": {
+                        attrs: {
+                            fill: "#D3E398"
+                        },
+                        text: {
+                            content: "河南",
+                            attrs: {
+                                "font-size": 10,
+                                'cursor': 'pointer'
+                            }
+                        }, 
+                        href: "http://www.baidu.com"
+                    },
+                    "shanxi": {
+                        attrs: {
+                            fill: "#F9D2E4"
+                        },
+                        text: {
+                            content: "山西",
+                            attrs: {
+                                "font-size": 10,
+                                'cursor': 'pointer'
+                            }
+                        }, 
+                        href: "http://www.baidu.com"
+                    },
+                    "shaanxi": {
+                        attrs: {
+                            fill: "#C7E8FB"
+                        },
+                        text: {
+                            content: "陕西",
+                            attrs: {
+                                "font-size": 10,
+                                'cursor': 'pointer'
+                            }
+                        }, 
+                        href: "http://www.baidu.com"
+                    },
+                    "gansu": {
+                        attrs: {
+                            fill: "#C7E8FB"
+                        },
+                        text: {
+                            content: "甘肃",
+                            attrs: {
+                                "font-size": 10,
+                                'cursor': 'pointer'
+                            }
+                        }, 
+                        href: "http://www.baidu.com"
+                    },
+                    "hubei": {
+                        attrs: {
+                            fill: "#D3E398"
+                        },
+                        text: {
+                            content: "湖北",
+                            attrs: {
+                                "font-size": 10,
+                                'cursor': 'pointer'
+                            }
+                        }, 
+                        href: "http://www.baidu.com"
+                    },
+                    "jiangxi": {
+                        attrs: {
+                            fill: "#D3E398"
+                        },
+                        text: {
+                            content: "江西",
+                            attrs: {
+                                "font-size": 10,
+                                'cursor': 'pointer'
+                            }
+                        }, 
+                        href: "http://www.baidu.com"
+                    },
+                    "fujian": {
+                        attrs: {
+                            fill: "#F4AF86"
+                        },
+                        text: {
+                            content: "福建",
+                            attrs: {
+                                "font-size": 10,
+                                'cursor': 'pointer'
+                            }
+                        }, 
+                        href: "http://www.baidu.com"
+                    },
+                    "hunan": {
+                        attrs: {
+                            fill: "#D3E398"
+                        },
+                        text: {
+                            content: "湖南",
+                            attrs: {
+                                "font-size": 10,
+                                'cursor': 'pointer'
+                            }
+                        }, 
+                        href: "http://www.baidu.com"
+                    },
+                    "guizhou": {
+                        attrs: {
+                            fill: "#EDF099"
+                        },
+                        text: {
+                            content: "贵州",
+                            attrs: {
+                                "font-size": 10,
+                                'cursor': 'pointer'
+                            }
+                        }, 
+                        href: "http://www.baidu.com"
+                    },
+                    "sichuan": {
+                        attrs: {
+                            fill: "#EDF099"
+                        },
+                        text: {
+                            content: "四川",
+                            attrs: {
+                                "font-size": 10,
+                                'cursor': 'pointer'
+                            }
+                        }, 
+                        href: "http://www.baidu.com"
+                    },
+                    "yunnan": {
+                        attrs: {
+                            fill: "#EDF099"
+                        },
+                        text: {
+                            content: "云南",
+                            attrs: {
+                                "font-size": 10,
+                                'cursor': 'pointer'
+                            }
+                        }, 
+                        href: "http://www.baidu.com"
+                    },
+                    "qinghai": {
+                        attrs: {
+                            fill: "#C7E8FB"
+                        },
+                        text: {
+                            content: "青海",
+                            attrs: {
+                                "font-size": 10,
+                                'cursor': 'pointer'
+                            }
+                        }, 
+                        href: "http://www.baidu.com"
+                    },
+                    "hainan": {
+                        attrs: {
+                            fill: "#F4AF86"
+                        },
+                        text: {
+                            content: "海南",
+                            attrs: {
+                                "font-size": 10,
+                                'cursor': 'pointer'
+                            }
+                        }, 
+                        href: "http://www.baidu.com"
+                    },
+                    "shanghai": {
+                        attrs: {
+                            fill: "#FCD68D"
+                        },
+                        text: {
+                            content: "上海",
+                            attrs: {
+                                "font-size": 10,
+                                'cursor': 'pointer'
+                            }
+                        }, 
+                        href: "http://www.baidu.com"
+                    },
+                    "chongqing": {
+                        attrs: {
+                            fill: "#EDF099"
+                        },
+                        text: {
+                            content: "重庆",
+                            attrs: {
+                                "font-size": 10,
+                                'cursor': 'pointer'
+                            }
+                        }, 
+                        href: "http://www.baidu.com"
+                    },
+                    "tianjin": {
+                        attrs: {
+                            fill: "#F9D2E4"
+                        },
+                        text: {
+                            content: "天津",
+                            position: "right",
+                            attrs: {
+                                "font-size": 10,
+                                'cursor': 'pointer'
+                            }
+                        }, 
+                        href: "http://www.baidu.com"
+                    },
+                    "beijing": {
+                        attrs: {
+                            fill: "#F9D2E4"
+                        },
+                        text: {
+                            content: "北京",
+                            attrs: {
+                                "font-size": 10,
+                                'cursor': 'pointer'
+                            }
+                        }, 
+                        href: "http://www.baidu.com"
+                    },
+                    "neimongol": {
+                        attrs: {
+                            fill: "#C7E8FB" 
+                        },
+                        text: {
+                            content: "内蒙古",
+                            attrs: {
+                                "font-size": 10,
+                                'cursor': 'pointer'
+                            }
+                        }, 
+                        href: "http://www.baidu.com"
+                    },
+                    "guangxi": {
+                        attrs: {
+                            fill: "#EDF099"
+                        },
+                        text: {
+                            content: "广西",
+                            attrs: {
+                                "font-size": 10,
+                                'cursor': 'pointer'
+                            }
+                        }, 
+                        href: "http://www.baidu.com"
+                    },
+                    "xinjiang": {
+                        attrs: {
+                            fill: "#C7E8FB"
+                        },
+                        text: {
+                            content: "新疆",
+                            attrs: {
+                                "font-size": 10,
+                                'cursor': 'pointer'
+                            }
+                        }, 
+                        href: "http://www.baidu.com"
+                    },
+                    "xizang": {
+                        attrs: {
+                            fill: "#E6E6E6"
+                        },
+                        text: {
+                            content: "西藏",
+                            attrs: {
+                                "font-size": 10,
+                                'cursor': 'pointer'
+                            }
+                        }, 
+                        href: "http://www.baidu.com"
+                    },
+                    "guangdong": {
+                        attrs: {
+                            fill: "#F4AF86"
+                        },
+                        text: {
+                            content: "广东",
+                            attrs: {
+                                "font-size": 10,
+                                'cursor': 'pointer'
+                            }
+                        }, 
+                        href: "http://www.baidu.com"
+                    },
+                    "ningxia": {
+                        attrs: {
+                            fill: "#C7E8FB"
+                        },
+                        text: {
+                            content: "宁夏",
+                            attrs: {
+                                "font-size": 10,
+                                'cursor': 'pointer'
+                            }
+                        }, 
+                        href: "http://www.baidu.com"
+                    },
+                    "hongkong": {
+                        attrs: {
+                            fill: "#F4AF86"
+                        },
+                        text: {
+                            content: "香港",
+                            position: "right",
+                            attrs: {
+                                "font-size": 10,
+                                'cursor': 'pointer'
+                            }
+                        }, 
+                        href: "http://www.baidu.com"
+                    },
+                    "taiwan": {
+                        attrs: {
+                            fill: "#F4AF86"
+                        },
+                        text: {
+                            content: "台湾",
+                            attrs: {
+                                "font-size": 10,
+                                'cursor': 'pointer'
+                            }
+                        }, 
+                        href: "http://www.baidu.com"
+                    },
+                    "macau": {
+                        attrs: {
+                            fill: "#F4AF86"
+                        },
+                        text: {
+                            content: "澳门",
+                            attrs: {
+                                "font-size": 10,
+                                'cursor': 'pointer'
+                            }
+                        }, 
+                        href: "http://www.baidu.com"
+                    },
+                },
+
+                // Add some plots on the map
+                plots: {
+                    // Image plot
+                    'guangdong': {
+                        type: "image",
+                        url: "assets/plugins/map/hover.png",
+                        width: 13,
+                        height: 13,
+                        latitude: 45.1,
+                        longitude: 4.3444,
+                        text: {content: "深圳", attrs: {
+                                "font-size": 10, 
+                                'cursor': 'pointer'
+                            }},
+                        attrs: {
+                            cursor: 'pointer',
+                            opacity: 1
+                        },
+                        attrsHover: {
+                            transform: "s1.5"
+                        }
+                       ,
+                        href: "example-sz.html"
+//                        ,
+//                        target: "_blank"
+                    },
+//                        'lyon': {
+//                        type: "circle",
+//                        size: 50,
+//                        latitude: 45.758888888889,
+//                        longitude: 4.8413888888889,
+//                        value: 700000,
+//                        tooltip: {content: "<span style=\"font-weight:bold;\">City :</span> Lyon"},
+//                        text: {content: "Lyon"},
+//                        href: "http://fr.wikipedia.org/wiki/Lyon"
+//                    },
+                            
+//                    'neimongol': {
+//                        type: "image",
+//                        url: "assets/plugins/map/hover.png",
+//                        width: 0,
+//                        height: 0,
+//                        latitude: 48.5,
+//                        longitude: 2.3444,
+//                        opacity: 1,
+////                        attrs: {
+////                            cursor: 'pointer'
+////                        },
+//                        attrsHover: {
+//                            transform: "s1.5"
+//                        },
+//                        text: {
+//                            content: "内蒙古",
+//                            attrs: {
+//                                "font-size": 10,
+//                                'cursor': 'pointer',
+//                                 opacity: 1,
+//                            }
+//                        }
+//                        , 
+////                        href: "example-sz.html"
+////                        ,
+//                        target: "_blank"
+//                    },
+// Plot positioned by x and y instead of latitude, longitude
+//                    'neimongol': {
+//                        x: 400,
+//                        y: 100,
+//                        size: 20,
+//                        text: {
+//                            content: "内蒙古"
+//                            , position: "bottom"
+//                            , attrs: {"font-size": 0, fill: "#000", opacity:0.6}
+//                            , attrsHover: {fill: "#004a9b", opacity: 1}
+//                        },
+//                    }
+                    // Circle plot
+//                    'lyon': {
+//                        type: "circle",
+//                        size: 50,
+//                        latitude: 45.758888888889,
+//                        longitude: 4.8413888888889,
+//                        value: 700000,
+//                        tooltip: {content: "<span style=\"font-weight:bold;\">City :</span> Lyon"},
+//                        text: {content: "Lyon"},
+////                        href: "http://fr.wikipedia.org/wiki/Lyon"
+//                    },
+                    //                    // Square plot
+                    //                    'rennes': {
+                    //                        type: "square",
+                    //                        size: 20,
+                    //                        latitude: 48.114166666667,
+                    //                        longitude: -1.6808333333333,
+                    //                        tooltip: {content: "<span style=\"font-weight:bold;\">City :</span> Rennes"},
+                    //                        text: {content: "Rennes"},
+                    ////                        href: "http://fr.wikipedia.org/wiki/Rennes"
+                    //                    },
+
+                }
+
+
+            });
+
+        });
+
+    </script>
+    <!--[if lt IE 9]>
+    <script src="assets/js/respond.js"></script>
+<![endif]-->
+    <!--<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>-->
+</body>
+
+</html>
